@@ -1,0 +1,120 @@
+:root {
+--primary-color: #000D84;
+--dark-primary-color: #000638;
+--secondary-color: #00FFA3;
+--text-color: #FFF;
+font-family: 'Red Hat Text', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Red Hat Display';
+    margin: 10px 0;
+}
+
+
+html, body {
+    margin: 0;
+}
+
+section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--dark-primary-color);
+    padding: 35px;
+    display: flex;
+    box-sizing: border-box;
+    .row {
+        max-width: 80%;
+        justify-content: space-between;
+        .row-inner {
+            max-width: 50%;
+        }
+    }
+}
+header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4em;
+    box-sizing: border-box;
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        p {
+            max-width: 200px;
+        }
+    }
+    img {
+        background-color: var(--secondary-color);
+        border-radius: 1000px;
+        width: 400px;
+        height: 400px;
+    }
+}
+nav {
+    // position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    background-color: var(--dark-primary-color);
+    color: var(--text-color);
+    ul, h1 {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+
+}
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 3em;
+}
+h4 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+}
+h5 {
+    font-size: 2.2em;
+    text-align: center;
+}
+.card {
+    width: 350px;
+    min-height: 400px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    h3, span {
+        text-align: center;
+    }
+}
+.priceOuter {
+    font-size: 1.3em;
+    .priceInner {
+        font-size: 2.3em;
+    }
+}
+.row {
+    display: flex;
+}
+p {
+    font-size: 20px;
+}
