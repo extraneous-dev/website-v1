@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Astra Web Design</title>
     <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -15,6 +15,7 @@
             <li>
                 <h1><span class="page-title">astra</span> Web Design</h1>
             </li>
+            <li><a href="#">Blog</a></li>
         </ul>
     </nav>
     <header>
@@ -28,15 +29,15 @@
         </div>
     </header>
     <section class="whyUs">
-        <h3>Why Us?</h3>
+        <h3>why us?</h3>
         <div class="row">
-            <h4>WordPress websites are slow.</h4>
+            <h4>WordPress websites are slow. Our websites are blazing-fast.</h4>
             <div class="row-inner">
                 <p>Many of our competitors use tools like WordPress, which allow them to create a website quickly and
                     easily, but end up creating a slower site</p>
                 <p>Slower sites are heavily penalized, so they appear lower in Google Search and Maps. 3% of customers
                     leave a website every second it takes to load.</p>
-                <span>More technical info.</span>
+
                 <p>WordPress is a dynamic site generator, which means every time someone visits your website, it has to
                     do a bunch of processing to serve the name, content, etc. With us, we directly code it into your
                     website,
@@ -47,14 +48,35 @@
         <div class="row">
             <h4>Our websites don't require any maintenance.</h4>
             <div class="row-inner">
-                <p>Even if the contract ends, you don't need to update plugins or make sure the website
+                <p>With other website creators, you have to worry about your WordPress and plugins not getting hacked.
+                </p>
+                <p>With us, even if the contract ends, you don't need to update plugins or make sure the website
                     is working. Just pay for the domain name and your site will keep on going!
                 </p>
             </div>
         </div>
+        <div class="row">
+            <h4>Delivered in a week or less.</h4>
+            <div class="row-inner">
+                <p>Even while custom-building our sites, the simplicity makes it so that we deliver a beautiful site in a week or less.</p>
+            </div>
+        </div>
         <h4>We make custom static websites, which can increase your customers.</h4>
     </section>
-    <section>
+    <section id="examples">
+        <h3>examples</h3>
+        <div class="slider">
+            <div class="controls">
+                <button>Back</button>
+                <button>Forward</button>
+            </div>
+            <div class="slide" draggable> 
+                <!-- JavaScript for examples slider goes here -->
+            </div>
+            <div class="slide"> </div>
+        </div>
+    </section>
+    <section class="pricing">
         <h3>pricing</h3>
         <h4>simple pricing.</h4>
         <div class="card">
@@ -63,6 +85,8 @@
             <ul>
                 <li>Basic Google Business Profile setup</li>
                 <li>Free hosting and domain</li>
+                <li>Unlimited Updates</li>
+                <li></li>
             </ul>
         </div>
     </section>
@@ -70,25 +94,36 @@
         <h3>About Us</h3>
         <div class="row">
             <div>
-                <h4>AAAAA</h4>
-                <img src="#" />
+                <h4>Hi. I'm Jose Sanchez.</h4>
+                <p>I'm a designer and developer of websites and software products. I've had a significant amount of experience in webdev, participating in internships and computer science-related programs. I'm currently studying CS in college, so know that your business will help a struggling student survive :)</p>
+                <a href="#">View Personal Portfolio</a>
             </div>
+            <img src="#" />
         </div>
     </section>
     <section>
         <h3>Ready for web development that's awesome?</h3>
         <form name="newProject" netlify>
-            <input type="text" name="name" placeholder="Your Name"/>
-            <input type="email" name="email" placeholder="email"/>
-            <input type="text" name="projectTitle" placeholder="Your Project Title"/>
-            <textarea name="description"></textarea>
-            <input type="text" name="AAAA"/>
-            <input type="text" name="BBBB"/>
-            <input type="text" name="CCCC"/>
+            <div class="row">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Your email" />
+            <input type="tel" name="phoneNumber" placeholder="Your phone number" />
+        </div>
+        <div class="row">
+            <input type="text" name="projectTitle" placeholder="Your Project Title" />
+            <textarea name="description" placeholder="Please add a description of your project."></textarea>
+        </div>
+        <div class="row">
+            <input type="text" name="BBBB" />
+            <input type="text" name="CCCC" />
+        </div>
             <input type="submit" value="Send" />
 
         </form>
     </section>
+    <footer>
+        Copyright &copy; Extraneous Dev.
+    </footer>
 </body>
 
 </html>

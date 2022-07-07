@@ -1,16 +1,23 @@
+/* declare spacing, color, etc variables */
+
 :root {
 --primary-color: #000D84;
 --dark-primary-color: #000638;
 --secondary-color: #00FFA3;
 --text-color: #FFF;
+--main-padding: 35px;
 font-family: 'Red Hat Text', Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: 'Red Hat Display';
     margin: 10px 0;
 }
 
+h3 {
+    text-decoration: underline var(--secondary-color) 2px;
+
+}
 
 html, body {
     margin: 0;
@@ -22,11 +29,14 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: var(--text-color);
     background-color: var(--dark-primary-color);
-    padding: 35px;
+    padding: var(--main-padding);
     display: flex;
     box-sizing: border-box;
+    &:nth-child(2n) {
+        background-color: var(--primary-color);
+    }
     .row {
         max-width: 80%;
         justify-content: space-between;
@@ -34,6 +44,9 @@ section {
             max-width: 50%;
         }
         margin-bottom: 3em;
+    }
+    .pricing {
+        background-color: var(--secondary-color);
     }
 }
 .page-title {
@@ -46,7 +59,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color);
     padding: 4em;
     position: relative;
     box-sizing: border-box;
@@ -86,8 +99,18 @@ nav {
         padding: 0;
         margin: 0;
     }
+    ul {
+        display: flex;
+    }
     li {
         list-style: none;
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        > * {
+            margin-right: 5px;
+        }
     }
     h1 {
         font-size: 1.3em;
@@ -131,4 +154,46 @@ h5 {
 }
 p {
     font-size: 20px;
+}
+
+input, textarea {
+    background-color: transparent;
+    color: var(--text-color);
+    border: solid var(--secondary-color) 1px;
+}
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem var(--main-padding);
+}
+#examples {
+    
+    .slider {
+        position: relative;
+        width: 80vw;
+        height: 70vh;
+        // background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .controls {
+            position: absolute;
+            top: 2%;
+            left: 48%;
+        }
+        .slide {
+            width: 40vw;
+            height: 79%;
+            
+            background-color: var(--secondary-color);
+            &:nth-of-type(1n) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 1rem .5rem;
 }
