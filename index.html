@@ -86,6 +86,7 @@
                 <li>Basic Google Business Profile setup</li>
                 <li>Free hosting and domain</li>
                 <li>Unlimited Updates</li>
+                <li>Analytics setup</li>
                 <li></li>
             </ul>
         </div>
@@ -103,6 +104,7 @@
     </section>
     <section>
         <h3>Ready for web development that's awesome?</h3>
+        <p>Enter your details, and I'll give you a call whenever I have time.</p>
         <form name="newProject" netlify>
             <div class="row">
             <input type="text" name="name" placeholder="Your Name" />
@@ -114,8 +116,16 @@
             <textarea name="description" placeholder="Please add a description of your project."></textarea>
         </div>
         <div class="row">
-            <input type="text" name="BBBB" />
-            <input type="text" name="CCCC" />
+            <div>
+                <p>What times would you be available to talk about your project?</p>
+                <label for="early">Early</label>
+                <input type="checkbox" value="early"/>
+                <label for="noon">Noon</label>
+                <input type="checkbox" value="noon" />
+                <label for="afternoon">Afternoon</label>
+                <input type="checkbox" value="afternoon" />
+            </div>
+            <div><span>And what days?</span></div>
         </div>
             <input type="submit" value="Send" />
 
