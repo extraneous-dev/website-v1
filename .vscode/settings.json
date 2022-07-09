@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "index.css": true,
+        "simple.js": true
+    }
+}

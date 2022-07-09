@@ -1,199 +1,89 @@
-/* declare spacing, color, etc variables */
+/* reset margins */
 
-:root {
---primary-color: #000D84;
---dark-primary-color: #000638;
---secondary-color: #00FFA3;
---text-color: #FFF;
---main-padding: 35px;
-font-family: 'Red Hat Text', Arial, Helvetica, sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Red Hat Display';
-    margin: 10px 0;
-}
-
-h3 {
-    text-decoration: underline var(--secondary-color) 2px;
-
-}
-
-html, body {
+body, html {
     margin: 0;
+    padding: 0;
 }
 
-section {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--text-color);
-    background-color: var(--dark-primary-color);
-    padding: var(--main-padding);
-    display: flex;
-    box-sizing: border-box;
-    &:nth-child(2n) {
-        background-color: var(--primary-color);
-    }
-    .row {
-        max-width: 80%;
-        justify-content: space-between;
-        .row-inner {
-            max-width: 50%;
-        }
-        margin-bottom: 3em;
-    }
-    .pricing {
-        background-color: var(--secondary-color);
-    }
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-family: 'Red Hat Display';
 }
-.page-title {
+
+
+/* declare spacing, color, etc variables */
+:root {
+    --primary-color: #000D84;
+    --dark-primary-color: #000638;
+    --secondary-color: #00FFA3;
+    --text-color: #FFF;
+    --main-padding: 35px;
+    font-family: 'Red Hat Text', Arial, Helvetica, sans-serif;
+}
+
+h4 {
     color: var(--secondary-color);
+    font-size: 2em;
 }
+h3 {font-size: 2.3em;}
+
 header {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 4em;
-    position: relative;
-    box-sizing: border-box;
-    span {
-        position: absolute;
-        bottom: 3rem;
-        left: 3rem;
-        max-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    h2 {
+        font-size: 3em;
     }
-    .main {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        p {
-            max-width: 200px;
-        }
+    #quote {
+        position: relative;
+        bottom: 0rem;
+        left: -8em;
+        max-width: 10em;
     }
-
-}
-img {
-    background-color: var(--secondary-color);
-    border-radius: 1000px;
-    width: 400px;
-    height: 400px;
 }
 nav {
-    // position: absolute;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    top: 0;
+    display: flex;
     background-color: var(--dark-primary-color);
-    color: var(--text-color);
-    ul, h1 {
-        padding: 0;
-        margin: 0;
+    color: white;
+    a {
+        color: white;
+    }
+    span {
+        color: var(--secondary-color);
     }
     ul {
         display: flex;
-    }
-    li {
         list-style: none;
-        a {
-            color: var(--text-color);
-            text-decoration: none;
-        }
-        > * {
-            margin-right: 5px;
+        li {
+            margin-right: 10px;
         }
     }
-    h1 {
-        font-size: 1.3em;
-    }
+}
+section, header {
+    padding: 25px;
 
 }
-h2 {
-    font-size: 3em;
-}
-h3 {
-    font-size: 3em;
-}
-h4 {
-    font-size: 2.5em;
-    color: var(--secondary-color);
-}
-h5 {
-    font-size: 2.2em;
-    text-align: center;
-}
-.card {
-    width: 350px;
-    min-height: 400px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 15px;
-    border-radius: 4px;
-    h3, span {
-        text-align: center;
-    }
-}
-.priceOuter {
-    font-size: 1.3em;
-    display: block;
-    .priceInner {
-        font-size: 2.3em;
-    }
-}
-.row {
-    display: flex;
-}
-p {
-    font-size: 20px;
-}
-
-input, textarea {
-    background-color: transparent;
-    color: var(--text-color);
-    border: solid var(--secondary-color) 1px;
+section {
+ background-color: var(--primary-color);
+ color: white;
+ min-height: 60vh;
+ box-sizing: border-box;
+ &:nth-of-type(2n) {
+    background-color: var(--dark-primary-color);
+ }
 }
 footer {
     background-color: var(--secondary-color);
-    padding: 1rem var(--main-padding);
 }
-#examples {
-    
-    .slider {
-        position: relative;
-        width: 80vw;
-        height: 70vh;
-        // background-color: var(--primary-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        .controls {
-            position: absolute;
-            top: 2%;
-            left: 48%;
-        }
-        .slide {
-            width: 40vw;
-            height: 79%;
-            
-            background-color: var(--secondary-color);
-            &:nth-of-type(1n) {
-                margin-right: 10px;
-            }
-        }
-    }
-}
-button {
+.card {
+    width: 100%;
+    margin: 0 auto;
     background-color: var(--secondary-color);
-    border: none;
-    padding: 1rem .5rem;
+    padding: 25px;
+    box-sizing: border-box;
+    color: var(--primary-color);
 }
