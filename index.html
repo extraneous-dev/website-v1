@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Astra is a web development company that helps you build a website. We specialize on super-quick websites that help you get more customers.">
+    <meta name="description"
+        content="Astra is a web development company that helps you build a website. We specialize on super-quick websites that help you get more customers.">
     <title>Astra Web Development</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&family=Red+Hat+Text&display=swap"
         rel="stylesheet">
-        <script defer data-domain="astraweb.dev" src="https://plausible.io/js/plausible.js"></script>
+    <script defer data-domain="astraweb.dev" src="https://plausible.io/js/plausible.js"></script>
 </head>
 
 <body>
@@ -27,6 +28,7 @@
     <header>
         <!-- <div class="main"> -->
         <h2>Web Development that's out of this world</h2>
+        <a href="#contact" class="button">Contact Us</a>
         <!-- <canvas id="animCanvas" width="400" height="400"></canvas> -->
         <!--    </div> -->
         <div id="quote">
@@ -36,6 +38,8 @@
     </header>
     <section id="whyUs">
         <h3>why us?</h3>
+        <div class="rowContainer">
+
         <div class="row">
             <h4>WordPress websites are slow. Our websites are blazing-fast.</h4>
             <div class="row-inner">
@@ -50,48 +54,41 @@
                     so it loads lightning-fast!</p>
             </div>
         </div>
-
-        <div class="row">
-            <h4>Our websites don't require any maintenance.</h4>
-            <div class="row-inner">
-                <p>With other website creators, you have to worry about your WordPress and plugins not getting hacked.
-                </p>
-                <p>With us, even if the contract ends, you don't need to update plugins or make sure the website
-                    is working. Just pay for the domain name and your site will keep on going!
-                </p>
+            <div class="row">
+                <h4>Our websites don't require any maintenance.</h4>
+                <div class="row-inner">
+                    <p>With other website creators, you have to worry about your WordPress and plugins not getting
+                        hacked.
+                    </p>
+                    <p>With us, even if the contract ends, you don't need to update plugins or make sure the website
+                        is working. Just pay for the domain name and your site will keep on going!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Delivered in a week or less.</h4>
+                <div class="row-inner">
+                    <p>Even while custom-building our sites, the simplicity makes it so that we deliver a beautiful site
+                        in
+                        a week or less.</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <h4>Delivered in a week or less.</h4>
-            <div class="row-inner">
-                <p>Even while custom-building our sites, the simplicity makes it so that we deliver a beautiful site in
-                    a week or less.</p>
-            </div>
-        </div>
-        <h4>We make custom static websites, which can increase your customers.</h4>
+        <h4 class="tagline">We make custom static websites, which can increase your customers.</h4>
     </section>
     <section id="examples">
         <h3>examples</h3>
-        <div class="slider">
-            <div class="controls">
-                <button>Back</button>
-                <button>Forward</button>
-            </div>
-            <div class="slide" draggable>
-                <!-- JavaScript for examples slider goes here -->
-            </div>
-            <div class="slide"> </div>
-        </div>
+        <image-carousel></image-carousel>
     </section>
-    <section class="allIn">
-        <h3>All-in means all-in.</h3>
+    <section id="allIn">
+        <h3>All-in <span class="highlight">means</span> all-in.</h3>
         <span>No additional hosting costs.</span>
         <span>No buying domains.</span>
         <span>Just let us get to work, and we'll make something useful.</span>
         <span>And in the future, we may be able to handle marketing and other important operations, too!</span>
 
     </section>
-    <section class="pricing">
+    <section id="pricing">
         <h3>pricing</h3>
         <h4>simple pricing.</h4>
         <div class="card">
@@ -105,6 +102,7 @@
                 <li>Analytics setup</li>
                 <li></li>
             </ul>
+            <p>A minimum term of 10 months should be paid.</p>
         </div>
     </section>
     <section>
@@ -116,12 +114,12 @@
                     experience in webdev, participating in internships and computer science-related programs. I'm
                     currently studying CS in college, so know that your business will help a struggling student survive
                     :)</p>
-                <a href="#">View Personal Portfolio</a>
+                <a class="button" href="//josesanchez.dev">View Personal Portfolio</a>
             </div>
             <img src="#" />
         </div>
     </section>
-    <section>
+    <section id="contact">
         <h3>Ready for web development that's awesome?</h3>
         <p>Enter your details, and I'll give you a call whenever I have time.</p>
         <form name="newProject" netlify>

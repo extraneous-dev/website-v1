@@ -29,7 +29,14 @@ h4 {
     font-size: 2em;
 }
 h3 {font-size: 2.3em;}
-
+h5 {
+    font-size: 1.7em;
+    text-align: center;
+}
+.priceOuter {
+    display: block;
+    text-align: center;
+}
 header {
     background-color: var(--dark-primary-color);
     color: var(--text-color);
@@ -37,9 +44,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 80vh;
     h2 {
         font-size: 3em;
+        margin-bottom: .5em;
     }
     #quote {
         position: relative;
@@ -66,6 +74,18 @@ nav {
         }
     }
 }
+.button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#whyUs {
+.tagline {
+    text-align: center;
+}
+}
 section, header {
     padding: 25px;
 
@@ -73,7 +93,7 @@ section, header {
 section {
  background-color: var(--primary-color);
  color: white;
- min-height: 60vh;
+ min-height: 65vh;
  box-sizing: border-box;
  &:nth-of-type(2n) {
     background-color: var(--dark-primary-color);
@@ -83,6 +103,14 @@ footer {
     background-color: var(--secondary-color);
     padding: 5px;
 }
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    justify-content: space-between;
+
+}
+
 .card {
     width: 100%;
     margin: 0 auto;
@@ -90,4 +118,41 @@ footer {
     padding: 25px;
     box-sizing: border-box;
     color: var(--primary-color);
+    max-width: 400px;
+    min-height: 500px;
+    border-radius: 7px;
+}
+form {
+    max-width: 400px;
+}
+@media screen and (min-width: 768px) {
+    .row {
+        flex-direction: row;
+        .row-inner {
+            width: 30vw;
+        }
+        // justify-content: space-between;
+
+    }
+    #whyUs {
+        .rowContainer {
+            margin: 2em auto;
+
+        }
+    }
+}
+input, textarea {
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    border: none;
+    ::placeholder {
+        color: var(--primary-color);
+    }
+
+}
+/* utility classes */
+.highlight {
+    color: var(--secondary-color);
 }

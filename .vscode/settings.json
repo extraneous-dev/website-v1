@@ -1,6 +1,7 @@
 {
     "files.exclude": {
         "index.css": true,
+        "index.css.map": true,
         "simple.js": true
     }
 }
