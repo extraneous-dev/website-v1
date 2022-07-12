@@ -83,9 +83,9 @@ footer a {
     display: flex;
     flex-direction: column;
 }
-@media screen and (min-width: 561px) {
+@media screen and (min-width: 760px) {
     .row {
         flex-direction: row;
-        margin: 0 auto;
+        margin: 0 auto; 
     }
 }
