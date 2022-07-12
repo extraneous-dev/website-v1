@@ -1,0 +1,83 @@
+:root {
+    --primary-color: rgb(87, 0, 186);
+    --background-color: white;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Text';
+}
+nav {
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: white;
+    border-bottom: solid white .25px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav #companyLogo {
+    color: #EEE;
+}
+nav#largeLogo #productLogo {
+    font-size: large;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+nav li {
+    margin-right: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Red Hat Display';
+    margin: 3px auto;
+}
+h2 {
+    font-size: 2.4em;
+}
+button {
+    background-color: var(--primary-color);
+    width: 12em;
+    height: 4em;
+    border-radius: 50px;
+    border: solid var(--background-color) 2px;
+    color: var(--background-color);
+    transition: all 300ms;
+}
+button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color)
+}
+button.secondary {
+    background-color: var(--background-color);
+}
+.grid {
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+}
+footer {
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: var(--background-color);
+    text-align: center;
+}
+footer a {
+    color: var(--background-color);
+}
+.warning {
+    padding: 1em;
+    background-color: yellow;
+}
+@media screen and (min-width: 1366px) {
+
+}

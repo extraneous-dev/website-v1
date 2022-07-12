@@ -1,0 +1,47 @@
+section#pageHeader {
+    min-height: 90vh;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+section {
+    padding: 1em;
+    box-sizing: border-box;
+}
+section h3 {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: normal;
+}
+#diagram {
+    width: 70vw;
+    margin: 0 auto;
+    height: 800px;
+}
+.boxes {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+}
+section#portableMonster {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+.grid div {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 1em;
+}
+#rom-compatible img{
+width: 250px;
+height: 250px;
+}
+#guarantee .grid div {
+    background-color: white;
+    border: solid gray 1px;
+}
