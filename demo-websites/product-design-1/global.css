@@ -79,6 +79,13 @@ footer a {
     padding: 1em;
     background-color: yellow;
 }
-@media screen and (min-width: 1366px) {
-
+.row {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 561px) {
+    .row {
+        flex-direction: row;
+        margin: 0 auto;
+    }
 }
