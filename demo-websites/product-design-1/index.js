@@ -6,13 +6,6 @@ anime.timeline()
     targets: '#pageHeader .letter',
     opacity: [0,1],
     easing: "easeInOutQuad",
-    duration: 500,
-    delay: (el, i) => 75 * (i+1)
-  })
-  .add({
-    targets: '.boxes',
-    duration: 500,
-    opacity: [0, 1],
-    easing: "easeInOutQuad",
-
+    duration: 400,
+    delay: (el, i) => 50 * (i+1)
   })

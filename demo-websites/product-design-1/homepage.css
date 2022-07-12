@@ -12,10 +12,11 @@ section#pageHeader {
 section {
     padding: 1em;
     box-sizing: border-box;
+    min-height: 60vh;
 }
 section h3 {
     font-size: 1.2em;
-    color: #333;
+    color: #555;
     font-weight: normal;
 }
 #diagram {
@@ -44,4 +45,13 @@ height: 250px;
 #guarantee .grid div {
     background-color: white;
     border: solid gray 1px;
+}
+#cta {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
 }
